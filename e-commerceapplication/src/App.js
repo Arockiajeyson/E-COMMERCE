@@ -10,9 +10,9 @@ function App() {
   const [filtT, setFilteT] = useState(false)
   const [pageNo, setPageNo] = useState(0)
   useEffect(() => {
-    fetch('https://dummyjson.com/products')
+    fetch('https://dummyjson.com/products?skip=0&&limit=100')
       .then(e => e.json())
-      .then(e => { setState(e.products.sort((a, b) => a.rating - b.rating)) })
+      .then(e => { setState(e.products.sort((a, b) => a.rating - b.rating));console.log(state) })
       .catch(e => console.log(e))
 
   }, [])
@@ -72,7 +72,7 @@ function App() {
         previousLabel={"previous"}
         nextLabel={"next"}
         onPageChange={changePages}
-        pageCount={3}
+        pageCount={10}
         containerClassName={"paginationBttns"}
         previousClassName={"previousBttn"}
         nextLinkClassName={"nextBttn"}
