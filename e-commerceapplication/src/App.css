@@ -1,0 +1,58 @@
+.paginationBttns {
+  list-style: none;
+  display: flex;
+  margin-top: 70px;
+  margin-left: 580px;
+}
+.paginationBttns a{
+  margin-left: 10px;
+  border: 1px solid black;
+  padding: 20px;
+  background-color: blue;
+  border-radius: 5px;
+}
+.paginationBttns a:hover{
+  background-color: rgb(79, 230, 79);
+  color: white;
+  cursor: pointer;
+}
+img{
+  width: 200px;
+  height: 200px;
+  margin-left: 50px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.ingass{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+body{
+  background-color:darkseagreen
+}
+.heading{
+  height: 40px;
+  width: 100%;
+  background-color: aquamarine;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+}
+.App{
+  position: relative;
+}
+.description{
+  position: absolute;
+  top:0;
+  right: 20px;
+  width: 600px;
+  height: 200px;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  border-radius: 10px;
+}
+.imf{
+  cursor: pointer;
+}
